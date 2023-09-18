@@ -23,7 +23,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --purple: #BC8CF2;
+    --purple: #71a0f1; 
     --black: #000000;
     --white: #F7F5F2;
     --grey: #DFDFDE;
@@ -132,9 +132,9 @@ section{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.8rem;
-    color: var(--purple);
+    color: var(--white);
     background-color: transparent;
-    border: 0.2rem solid var(--purple);
+    /* border: 0.2rem solid var(--purple); */
 }
 
 .btn i{
@@ -142,8 +142,8 @@ section{
 }
 
 .btn:hover{
-    color: var(--white);
-    background-color: var(--purple);
+    color: var(--purple);
+    /* background-color: var(--purple); */
     cursor: pointer;
 }
 
@@ -311,6 +311,14 @@ header #menu-btn:hover{
 
 
 /*--------------------- 5- About Area CSS (Start) ---------------------*/
+.row{
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
 .about .box-container{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -331,7 +339,7 @@ header #menu-btn:hover{
 
 .about .image img{
     width: 100%;
-    border: 1rem solid var(--purple);
+    /* border: 1rem solid var(--purple); */
 }
 
 .about .content{
@@ -604,7 +612,7 @@ header #menu-btn:hover{
         flex: 1 1 33rem;
     background-color: var(--black);
     padding: 4rem 3rem;
-    text-align: center;
+     text-align: center;
     border: 0.1rem solid rgba(255,255, 255, 0.3);
     border-radius: 0.5rem;
     -webkit-transition: all 0.5s linear;
@@ -666,9 +674,25 @@ header #menu-btn:hover{
 
 .controls .button.active{
     cursor: pointer;
-    background-color: var(--purple);
-    color: var(--white);
+    /* background-color: var(--purple);   ALL */
+    color: var(--purple);
 }
+
+.btnn{
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        font-size: 1.8rem;
+        color: var(--purple);
+        background-color: transparent;
+        border: 0.2rem solid var(--purple); 
+    }   
+.btnn:hover{
+        color: var(--white);
+         background-color: var(--purple);
+        cursor: pointer;
+    }     
 
 .portfolio .box-container{
     display: -ms-grid;
@@ -969,6 +993,14 @@ header #menu-btn:hover{
 
 
 /*--------------------- 11- Contact Area CSS (Start) ---------------------*/
+a{
+color: var(--purple);        
+font-size: 1.6rem;
+}
+a:hover{
+    color: var(--purple);
+    text-decoration: none;
+}
 .contact .alert{
     font-size: 2rem;
     color: var(--purple);
@@ -1095,7 +1127,7 @@ header #menu-btn:hover{
 
 /*--------------------- 12- Footer Area CSS (Start) ---------------------*/
 footer{
-    background-color: var(--purple);
+    background-color: rgb(60, 60, 60);
     padding: 2rem 0;
     text-align: center;
 }
@@ -1109,6 +1141,7 @@ footer .social{
     justify-content: center;
     padding: 2rem 0;
 }
+
 
 footer .social .fab{
     background-color: var(--black);
